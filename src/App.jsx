@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Profile from "./pages/Profile";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ForgotPassword from "./pages/ForgotPassword";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,10 +22,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/monitor" element={<Monitor />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
       <ToastContainer
         position="bottom-right"

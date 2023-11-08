@@ -4,7 +4,7 @@ export default function Monitor() {
   return (
     <section>
       <div>
-        <div className="w-full md:w-[67%] lg:w-[40%] lg:ml-20 mt-20 mb-2">
+        <div className="w-full md:w-[67%] lg:w-[40%] lg:ml-20 mt-12">
           <p className="text-lg font-semibold">Add Image</p>
           <input
             type="file"

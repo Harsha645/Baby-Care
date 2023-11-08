@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import OAuth from "../components/OAuth";
 
 export default function SignIn() {
-  
   const [showPassword, setShowPassword] = useState(false);
   const { email, password } = FormData;
   // const [formData, setFormData] = useState({
@@ -16,7 +15,7 @@ export default function SignIn() {
   function onChange(event) {}
 
   function onSubmit() {}
-  
+
   return (
     <section>
       <div className=" flex justify-center items-center px-6 py-16 max-w-6xl mx-auto">

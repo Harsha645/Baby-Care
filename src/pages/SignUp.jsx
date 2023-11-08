@@ -2,29 +2,25 @@ import React, { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link, Navigate } from "react-router-dom";
 import OAuth from "../components/OAuth";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-
 export default function SignUp() {
-
   const navigate = useNavigate();
-  
+
   const [showPassword, setShowPassword] = useState(false);
-  
-  const [newEmployee, setNewEmployee] = useState({ status: "n/a" })
-  
+
+  const [newEmployee, setNewEmployee] = useState({ status: "n/a" });
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     contact_number: "",
     password: "",
-
   });
-  
-  function onChange (){
-  }
- 
+
+  function onChange() {}
+
   return (
     <section>
       <h1 className="text-5xl font-serif mt-6 text-center">Get started!</h1>
@@ -82,7 +78,7 @@ export default function SignUp() {
                   className="absolute right-3 top-3 text-xl cursor-pointer"
                 />
               )}
-             
+
               <div className="flex justify-between whitespace-nowrap text-sm sm:text-lg">
                 <p className="mb-6">
                   Have an account?
